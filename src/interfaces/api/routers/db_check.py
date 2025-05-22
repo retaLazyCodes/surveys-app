@@ -7,6 +7,7 @@ from src.infrastructure.db.session import get_db
 
 router = APIRouter()
 
+
 @router.get("/db-check", summary="Test DB connection")
 async def db_check(session: AsyncSession = Depends(get_db)):
     try:
