@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from .value_objects import EntityId
+from .value_objects.entity_id import EntityId
 from datetime import datetime
 from typing import List
 from .option import Option
